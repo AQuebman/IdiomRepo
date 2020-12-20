@@ -1,0 +1,33 @@
+Idiom_Generation:
+    BoxLayout:   # left side of App
+        orientation: 'vertical'   #Orientation is Vertical instead of horizontal
+        canvas:
+            Color:
+                rgb: 0, 0, 0
+            Rectangle:
+                pos: self.pos
+                size: 385, 1100
+                        
+    	Button:
+        	text: 'Generic Generators'
+#			text: '[color=ff3333]Unselectable item[/color]' #An example of adding color to the text of the button
+            markup: True			
+        	height: '50dp'
+			size_hint: .4, .005
+			on_release: root.Idiom_Gen()       
+
+    GridLayout:   # left side of App
+		cols: 2
+        canvas:
+            Color:
+                rgb: 0, 0, 0
+            Rectangle:
+                pos: 385, 0
+                size: 1525, 1110                                
+        Label:					#Label for where a random Idiom will print
+            id: Char_Name
+            text: "Idiom Generator "
+            font_size: 24
+            text_size: (1800, 40)
+    		valign: 'top'
+    		halign: 'left'     	           	            	           	               	         	
